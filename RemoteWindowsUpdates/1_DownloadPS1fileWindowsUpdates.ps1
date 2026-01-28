@@ -18,7 +18,7 @@ if (-not (Test-Path $destinationFolder)) {
 # ------------------------------------------------------------
 
 # URL of the ZIP file containing InstallUpdates.ps1
-$zipUrl = "http://GreatWhite.ern.nps.edu:8624/endpoints/Public-Files/content/InstallUpdates.zip"
+$zipUrl = "http://ServerName:8624/endpoints/Public-Files/content/InstallUpdates.zip"
 
 # Local path where the ZIP file will be saved
 $zipPath = Join-Path $destinationFolder "InstallUpdates.zip"
