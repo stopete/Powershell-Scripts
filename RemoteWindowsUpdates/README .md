@@ -22,7 +22,8 @@ The solution follows these steps:
    A Scheduled Task is created to run `InstallUpdates.ps1` under the **SYSTEM** account with the highest privileges. This ensures updates can be installed even when no user is logged in and bypasses UAC limitations.
 
 4. 🚀 **Remote Execution**  
-   The scheduled task is remotely triggered using PowerShell, allowing updates to be initiated on demand.
+   The scheduled task is remotely triggered using PowerShell, allowing updates to be initiated on demand. You can use the InvokePWscriptToRemoteComputers.ps1 script to invoke 
+   3_InvokeScheduleTaskInstallUpdats.ps1 powershell script on remote computers.
 
 5. 🧹 **Optional Cleanup**  
    After execution, the scheduled task and associated files may be removed as part of a cleanup process.
