@@ -1,5 +1,7 @@
 # ================================
 # PURPOSE:
+# When Unisntalling .NET runtimes the directories don't 
+# get remove/delete so this script will automate this process
 # Remove End-of-Life (EOL) .NET runtimes (configurable)
 # from BOTH x64 and x86 dotnet directories
 # Provides messages for each version: found & deleted, or not found
@@ -86,4 +88,5 @@ if (Test-Path "C:\Program Files (x86)\dotnet\dotnet.exe") {
 } else {
     Write-Host "`nNo x86 dotnet runtime present." -ForegroundColor Green
 }
+
 
